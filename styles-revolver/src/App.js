@@ -1,11 +1,12 @@
 import Navbar from "./Components/Navbar";
 import "./App.css";
+import AllRoutes from "./Components/AllRoutes";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <h1>e-commrce web site</h1>
+      <AllRoutes />
     </div>
   );
 }
