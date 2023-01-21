@@ -7,6 +7,7 @@ import Signup from "../Pages/Signup";
 import Cart from "../Pages/Cart";
 import Checkout from "../Pages/Checkout";
 import PageNotFound from "../Pages/PageNotFound";
+import Admin from "../Pages/Admin";
 const AllRoutes = () => {
   return (
     <Routes>
@@ -17,6 +18,7 @@ const AllRoutes = () => {
       <Route path="/cart" element={<Cart />}></Route>
       <Route path="/checkout" element={<Checkout />}></Route>
       <Route path="*" element={<PageNotFound />}></Route>
+      <Route path="/admin" element={<Admin />}></Route>
     </Routes>
   );
 };
