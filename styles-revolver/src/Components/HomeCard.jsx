@@ -126,6 +126,7 @@ const HomeCard = () => {
         border="1px solid grey"
         padding={10}
         gap={8}
+        mb={10}
       >
         <Heading as="h4" size="md">
           Indian Clothing Online Shopping for Women & Men

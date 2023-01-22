@@ -1,5 +1,3 @@
-
-
 import {
   Box,
   Container,
@@ -42,7 +40,7 @@ export default function Footer() {
         >
           <Stack spacing={6}>
             <Box>
-              <Logo color={useColorModeValue("gray.700", "white")} />
+              <Logo color={useColorModeValue("gray.700", "black")} />
             </Box>
             <Text fontSize={"sm"}>
               © 2022 Style Revolver. All rights reserved

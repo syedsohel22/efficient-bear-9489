@@ -1,15 +1,23 @@
 import React from "react";
-import { Box, Img } from "@chakra-ui/react";
-const HomePageCarousel = () => {
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+import { Image } from "@chakra-ui/react";
+import { Carousel } from "react-responsive-carousel";
+const HomePageCarousel = ({ slides }) => {
   return (
-    <Box>
-      <Img
-        src={require("../assets/01_main_webp.webp")}
-        w="1600px"
-        alt="home-1"
-        h="400px"
-      />
-    </Box>
+    <Carousel infiniteLoop showArrows={true} showThumbs={true}>
+      {slides.map((slide) => {
+        return (
+          <Image
+            src={slide.image}
+            height="auto"
+            width="800px"
+            alt={slide.image}
+            key={slide.image}
+          />
+        );
+      })}
+    </Carousel>
   );
 };
 
