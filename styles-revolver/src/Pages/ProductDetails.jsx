@@ -43,14 +43,27 @@ const ProductDetails = () => {
           origninal Price ₹{singleproduct.oriprice}
         </Text>
         <Text>To place quick COD order Click Here</Text>
-        <Box w="300px" h="300px" alignItems="center" border="1px solid grey" justifyContent="center">
-          <Text>Price :{Math.floor(count * singleproduct.price)}</Text>
-          <Text></Text>
-          <Flex>
-            <Button onClick={handleAdd}>+</Button>
-            <Text>{count}</Text>
+        <Box
+          w="300px"
+          h="100px"
+          alignItems="center"
+          border="1px solid grey"
+          justifyContent="center"
+          display="flex"
+          flexDirection="coloumn"
+          mb={10}
+        >
+          <Box>
+            <Text>
+              <b>Total Price :{Math.floor(count * singleproduct.price)}</b>
+            </Text>
+          </Box>
+          <Box display="flex" p={5}>
             <Button onClick={handleSub}>-</Button>
-          </Flex>
+            <Text p={2}>{count}</Text>
+
+            <Button onClick={handleAdd}>+</Button>
+          </Box>
         </Box>
         <RouterLink to={`/payment`}>
           <Button color="white" bg="green">

@@ -11,7 +11,9 @@ const Navbar = () => {
           <Text> | Save Later</Text>
           <Text> | Order Cancle</Text>
           <Text> | Return Order</Text>
-          <Text> | Survey</Text>
+          <RouterLink to="/admin">
+            <Text> | Admin</Text>
+          </RouterLink>
         </Flex>
         <Spacer />
         <Flex gap="2" p={1}>

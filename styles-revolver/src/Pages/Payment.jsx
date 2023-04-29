@@ -4,22 +4,16 @@ import {
   FormControl,
   FormLabel,
   Input,
-  InputGroup,
   HStack,
-  InputRightElement,
   Stack,
-  Button,
-  Heading,
-  Text,
   useColorModeValue,
   TabPanel,
   TabPanels,
-  Link,
   Tab,
   Tabs,
   TabList,
 } from "@chakra-ui/react";
-import { useState } from "react";
+
 // import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import PaymentSucess from "../Components/PaymentSucess";
 
